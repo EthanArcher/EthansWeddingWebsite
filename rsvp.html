@@ -45,8 +45,54 @@
 					<span class="date">July 11, 2021</span>
 					<h1>RSVP</h1>
 				</header>
-				<p>This page is under construction</p>
-			</section>
+				<p>Please fill in the follow fields to indicate if you will be able to attend and what your choice of main is.</p>
+
+			<form id="rsvp-form">
+				<div class="row gtr-uniform">
+					<div class="col-12">
+						<input type="text" name="name" id="name" value="" placeholder="Name" />
+					</div>
+					<!-- Break -->
+					<div class="col-12">
+						<input type="email" name="email" id="email" value="" placeholder="Email" />
+					</div>
+					<!-- Break -->
+					<div class="col-6">
+						<select name="attending" id="attending">
+							<option value="">- Are you able to attend -</option>
+							<option value="yes">Yes</option>
+							<option value="no">No</option>
+						</select>
+					</div>
+
+					<!-- Break -->
+					<div class="col-6">
+						<select name="main_choice" id="main_choice">
+							<option value="">- Main Course -</option>
+							<option value="steak">Steak</option>
+							<option value="chicken">Chicken</option>
+							<option value="vegetarian_risotto">Vegetarian Risotto</option>
+						</select>
+					</div>
+					<!-- Break -->
+					<div class="col-12-xsmall">
+						<select name="dietary_requirements" id="dietary_requirements">
+							<option value="">- Do you have any dietary requirements -</option>
+							<option value="yes">Yes</option>
+							<option value="no">No</option>
+						</select>
+					</div>
+					<!-- Break -->
+					<div class="col-12">
+						<textarea name="comments" id="comments" placeholder="Do you have any other comments?" rows="3"></textarea>
+					</div>
+					<div>
+						<button type="submit" id="submit-form" class="primary">Submit</button>
+					</div>
+					<div id="msg"></div>
+				</form>
+
+		</section>
 
 		</div>
 
@@ -60,6 +106,7 @@
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
+	<script src="assets/js/google_script_form_ajax.js"></script>
 
 </body>
 
