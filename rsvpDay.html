@@ -81,12 +81,18 @@
 
 					<!-- Break -->
 					<div class="col-6">
-						<select name="dietary_requirements" id="dietary_requirements">
+						<select name="dietary_requirements" id="dietary_requirements" onchange="CheckDietaryRequirements(this.value);">
 							<option value="">- Do you have any dietary requirements -</option>
 							<option value="yes">Yes</option>
 							<option value="no">No</option>
 						</select>
 					</div>
+
+					<!-- Break -->
+					<div class="col-6">
+						<input type="text" name="dietary_requirements_details" id="dietary_requirements_details" style='display:none;' value="" placeholder="Dietary requirement details" />
+					</div>
+
 					<!-- Break -->
 					<div class="col-12">
 						<textarea name="comments" id="comments" placeholder="Do you have any other comments?" rows="3"></textarea>
@@ -112,6 +118,7 @@
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
 	<script src="assets/js/google_script_form_ajax.js"></script>
+	<script src="assets/js/dietary_requirements.js"></script>
 
 </body>
 
