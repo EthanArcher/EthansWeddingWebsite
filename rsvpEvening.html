@@ -43,18 +43,49 @@
 			<section class="post">
 				<header class="major">
 					<span class="date">July 11, 2021</span>
-					<h1>RSVP</h1>
+					<h1>RSVP Evening</h1>
 				</header>
-				<p>If you have been invited to join us for the ceremony and dinner please fill the ceremony and evening RSVP only.</p>
+				<p>Please fill in the follow fields to indicate if you will be able to attend and what your choice of main is.</p>
 
-				<form action="rsvpDay.html">
-					<input type="submit" value="Ceremony and Evening" />
-				</form>
+			<form id="rsvp-form">
+				<div class="row gtr-uniform" style="display:block;">
+					<div class="col-12">
+						<input type="text" name="name" id="name" value="" placeholder="Name" />
+					</div>
+					<!-- Break -->
+					<div class="col-12">
+						<input type="email" name="email" id="email" value="" placeholder="Email" />
+					</div>
+					<!-- Hidden Field -->
+					<div class="col-12" hidden=true>
+						<input type="text" name="invite" id="invite" value="evening" />
+					</div>
+					<!-- Break -->
+					<div class="col-6">
+						<select name="attending" id="attending">
+							<option value="">- Are you able to attend -</option>
+							<option value="yes">Yes</option>
+							<option value="no">No</option>
+						</select>
+					</div>
 
-				<p>If you have been invited to join us for the evening celebrations please fill in the evening RSVP only.</p>
+					<!-- Break -->
+					<div class="col-6">
+						<select name="dietary_requirements" id="dietary_requirements">
+							<option value="">- Do you have any dietary requirements -</option>
+							<option value="yes">Yes</option>
+							<option value="no">No</option>
+						</select>
+					</div>
 
-				<form action="rsvpEvening.html">
-					<input type="submit" value="Evening only" />
+					<!-- Break -->
+					<div class="col-0">
+						<textarea name="comments" id="comments" placeholder="Do you have any other comments?" rows="3"></textarea>
+					</div>
+					<div>
+						<button type="submit" id="submit-form" class="primary">Submit</button>
+					</div>
+					<div id="msg"></div>
 				</form>
 
 		</section>
