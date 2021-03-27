@@ -1,5 +1,5 @@
 var $form = $('form#rsvp-form'),
-    url = 'https://script.google.com/macros/s/AKfycbyjlXn_khJVpZolea8CJAQK8IYE-fxym6uiIxjkR-qYMNBEZw/exec'
+    url = 'https://script.google.com/macros/s/AKfycbzNZmDvFNvtujVfm40_oqR9UbB9f9Otkc7ds-4C2SapI2m2DbnUMJCjB18JbARI4so/exec'
 
 $('#submit-form').on('click', function(e) {
   e.preventDefault()
